@@ -1,0 +1,12 @@
+Source: ros-foxy-rmf-battery
+Section: misc
+Priority: optional
+Maintainer: yadu <yadunund@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, ros-foxy-ament-cmake-catch2, ros-foxy-rmf-cmake-uncrustify, ros-foxy-rmf-traffic, ros-foxy-rmf-utils, ros-foxy-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-foxy-rmf-battery
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, ros-foxy-rmf-traffic, ros-foxy-rmf-utils, ros-foxy-ros-workspace
+Description: Package for modelling battery life of robots
