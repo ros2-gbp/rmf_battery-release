@@ -1,3 +1,26 @@
+## rmf_battery (foxy) - 0.1.1-1
+
+The packages in the `rmf_battery` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --track foxy --ros-distro foxy rmf_battery` on `Fri, 10 Sep 2021 08:08:32 -0000`
+
+The `rmf_battery` package was released.
+
+Version of package(s) in repository `rmf_battery`:
+
+- upstream repository: https://github.com/open-rmf/rmf_battery.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.1.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## rmf_battery (rolling) - 0.1.1-1
 
 The packages in the `rmf_battery` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --ros-distro rolling rmf_battery --edit` on `Wed, 08 Sep 2021 10:03:44 -0000`
