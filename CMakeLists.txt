@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(rmf_battery VERSION 0.1.1)
+project(rmf_battery VERSION 0.1.3)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS on)
 
@@ -28,7 +28,7 @@ find_package(rmf_traffic REQUIRED)
 find_package(eigen3_cmake_module QUIET)
 find_package(Eigen3 REQUIRED)
 find_package(ament_cmake_catch2 QUIET)
-find_package(rmf_cmake_uncrustify QUIET)
+find_package(ament_cmake_uncrustify QUIET)
 
 # ===== Battery modelling library
 file(GLOB_RECURSE core_lib_srcs "src/rmf_battery/*.cpp")
@@ -49,7 +49,7 @@ target_include_directories(rmf_battery
     ${Eigen3_INCLUDE_DIRS}
 )
 
-if(BUILD_TESTING AND ament_cmake_catch2_FOUND AND rmf_cmake_uncrustify_FOUND)
+if(BUILD_TESTING AND ament_cmake_catch2_FOUND AND ament_cmake_uncrustify_FOUND)
 
   file(GLOB_RECURSE unit_test_srcs "test/*.cpp")
 
@@ -69,7 +69,7 @@ if(BUILD_TESTING AND ament_cmake_catch2_FOUND AND rmf_cmake_uncrustify_FOUND)
     NAMES "rmf_code_style.cfg"
     PATHS "${rmf_utils_DIR}/../../../share/rmf_utils/")
 
-  rmf_uncrustify(
+  ament_uncrustify(
     ARGN include src test
     CONFIG_FILE ${uncrustify_config_file}
     MAX_LINE_LENGTH 80
@@ -134,5 +134,3 @@ export(
   FILE ${CMAKE_CURRENT_BINARY_DIR}/rmf_battery-targets.cmake
   NAMESPACE rmf_battery::
 )
-
-export(PACKAGE rmf_battery)
