@@ -1,0 +1,12 @@
+Source: ros-humble-rmf-battery
+Section: misc
+Priority: optional
+Maintainer: yadu <yadunund@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, ros-humble-ament-cmake-catch2 <!nocheck>, ros-humble-ament-cmake-uncrustify <!nocheck>, ros-humble-eigen3-cmake-module, ros-humble-rmf-traffic, ros-humble-rmf-utils, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-rmf-battery
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-rmf-traffic, ros-humble-rmf-utils, ros-humble-ros-workspace
+Description: Package for modelling battery life of robots
