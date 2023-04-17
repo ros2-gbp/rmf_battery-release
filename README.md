@@ -1,3 +1,26 @@
+## rmf_battery (rolling) - 0.1.4-1
+
+The packages in the `rmf_battery` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling rmf_battery` on `Mon, 17 Apr 2023 11:27:57 -0000`
+
+The `rmf_battery` package was released.
+
+Version of package(s) in repository `rmf_battery`:
+
+- upstream repository: https://github.com/open-rmf/rmf_battery.git
+- release repository: https://github.com/ros2-gbp/rmf_battery-release.git
+- rosdistro version: `0.1.3-2`
+- old version: `0.1.3-2`
+- new version: `0.1.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## rmf_battery (rolling) - 0.1.3-1
 
 The packages in the `rmf_battery` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --ros-distro rolling --track rolling rmf_battery` on `Wed, 13 Apr 2022 05:07:17 -0000`
