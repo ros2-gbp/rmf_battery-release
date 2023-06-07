@@ -1,0 +1,12 @@
+Source: ros-iron-rmf-battery
+Section: misc
+Priority: optional
+Maintainer: Yadunund <yadunund@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), cmake, libeigen3-dev, ros-iron-ament-cmake-catch2 <!nocheck>, ros-iron-ament-cmake-uncrustify <!nocheck>, ros-iron-eigen3-cmake-module, ros-iron-rmf-traffic, ros-iron-rmf-utils, ros-iron-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-iron-rmf-battery
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-iron-rmf-traffic, ros-iron-rmf-utils, ros-iron-ros-workspace
+Description: Package for modelling battery life of robots
