@@ -1,0 +1,65 @@
+ros-rolling-rmf-battery (0.3.0-2noble) noble; urgency=high
+
+
+
+ -- Yadunund <yadunund@openrobotics.org>  Thu, 08 Jun 2023 00:00:00 -0000
+
+ros-rolling-rmf-battery (0.2.0-2noble) noble; urgency=high
+
+  * Switch to rst changelogs
+  * Contributors: Yadunund
+
+ -- Yadunund <yadunund@openrobotics.org>  Tue, 06 Jun 2023 00:00:00 -0000
+
+ros-rolling-rmf-battery (0.1.4-2noble) noble; urgency=high
+
+  * Reusable ci (#28 <https://github.com/open-rmf/rmf_battery/pull/28>)
+  * Add buildtool_depend on cmake (#31 <https://github.com/open-rmf/rmf_battery/pull/31>)
+  * Add back missing ament index path exporting in CMakeLists (#33 <https://github.com/open-rmf/rmf_battery/pull/33>)
+  * Contributors: Chen Bainian, Esteban Martinena Guerrero, Scott K Logan, Yadunund
+
+ -- Yadunund <yadunund@openrobotics.org>  Sat, 15 Apr 2023 00:00:00 -0000
+
+ros-rolling-rmf-battery (0.1.3-2noble) noble; urgency=high
+
+  * Use ament_cmake_uncrustify (#20 <https://github.com/open-rmf/rmf_battery/pull/20>)
+  * Prepend package path to AMENT_PREFIX_PATH (#22 <https://github.com/open-rmf/rmf_battery/pull/22>)
+
+ -- Yadunund <yadunund@openrobotics.org>  Mon, 14 Feb 2022 00:00:00 -0000
+
+ros-rolling-rmf-battery (0.1.2-2noble) noble; urgency=high
+
+  * Using eigen3_cmake_module to fix RHEL build (#16 <https://github.com/open-rmf/rmf_battery/commit/7e1a4e73135963df2542e40913aa50ae79266fb3>)
+
+ -- Yadunund <yadunund@openrobotics.org>  Wed, 27 Oct 2021 00:00:00 -0000
+
+ros-rolling-rmf-battery (0.1.1-2noble) noble; urgency=high
+
+  * Making package ament agnostic
+
+ -- Yadunund <yadunund@openrobotics.org>  Wed, 08 Sep 2021 00:00:00 -0000
+
+ros-rolling-rmf-battery (0.1.0-2noble) noble; urgency=high
+
+  * Provides core rmf_battery::agv utilities
+    
+    BatterySystem - Describe battery properties of the vehicle
+    
+    MechanicalSystem - Describe mechanical properties of the vehicle
+    
+    PowerSystem - Describe a power system on-board the vehicle
+  * Provides rmf_battery::agv::SimpleMotionPowerSink
+    
+    Sample implementation of rmf_battery::MotionPowerSink
+    
+    Compute change in battery charge due to locomotion over a specified rmf_traffic::Trajectory
+  * Provides rmf_traffic::agv::SimpleDevicePowerSink
+    
+    Sample implementation of rmf_battery::DevicePowerSink
+    
+    Compute change in battery charge due to power systems over a specified duration
+  * Contributors: Yadunund
+
+ -- Yadunund <yadunund@openrobotics.org>  Wed, 02 Jun 2021 00:00:00 -0000
+
+
