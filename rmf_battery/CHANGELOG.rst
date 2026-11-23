@@ -2,6 +2,14 @@
 Changelog for package rmf_battery
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.1 (2026-11-13)
+------------------
+* bump cmake version (`#45 <https://github.com/open-rmf/rmf_battery/issues/45>`_)
+* Contributors: Aaron Chong
+
+0.6.0 (2026-09-25)
+------------------
+
 0.5.0 (2025-06-09)
 ------------------
 
